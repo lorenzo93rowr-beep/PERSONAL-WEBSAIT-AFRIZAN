@@ -1,0 +1,456 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #d9efff 0%,
+        #edf7ff 45%,
+        #ffffff 100%
+    );
+    background-attachment: fixed;
+    color: #25324a;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    background: linear-gradient(
+        90deg,
+        #d9efff,
+        #ffffff,
+        #e5f3ff
+    );
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #142b52;
+}
+
+.logo span {
+    color: #3685e8;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #596579;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #2878db;
+}
+
+/* AREA UTAMA */
+.container {
+    width: 84%;
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+/* HALAMAN BERANDA */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    min-height: 430px;
+}
+
+.hero-text {
+    flex: 1.5;
+}
+
+.label {
+    color: #2878db;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    color: #172b4d;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #2878db;
+}
+
+.hero h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #52647d;
+}
+
+.hero-text > p:not(.label) {
+    color: #68758a;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(
+        135deg,
+        #65b7ff,
+        #2878db
+    );
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(
+        135deg,
+        #2878db,
+        #155caf
+    );
+    transform: translateY(-2px);
+}
+
+
+.btn:hover {
+    background: #155caf;
+    transform: translateY(-2px);
+}
+
+/* KARTU IDENTITAS */
+.hero-card {
+    flex: 1;
+    max-width: 310px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(30, 65, 110, 0.08);
+}
+
+.avatar {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 18px rgba(29, 109, 207, 0.25);
+}
+
+.avatar.large {
+    width: 125px;
+    height: 125px;
+}
+
+
+.avatar.large {
+    width: 125px;
+    height: 125px;
+    font-size: 55px;
+}
+
+
+.hero-card h2 {
+    font-size: 20px;
+    color: #172b4d;
+}
+
+.hero-card p,
+.hero-card span {
+    font-size: 13px;
+    color: #718096;
+}
+
+/* KONTEN BERANDA */
+.content-section {
+    background: white;
+    padding: 30px;
+    margin-top: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(30, 65, 110, 0.05);
+}
+
+.content-section h2 {
+    margin-bottom: 10px;
+    color: #172b4d;
+}
+
+/* JUDUL HALAMAN */
+.page-heading {
+    margin-bottom: 35px;
+}
+
+.page-heading h1 {
+    font-size: 36px;
+    color: #172b4d;
+    margin-bottom: 8px;
+}
+
+.page-heading > p:last-child {
+    color: #718096;
+}
+
+/* HALAMAN PROFIL */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.7fr;
+    gap: 25px;
+}
+
+.profile-card,
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30, 65, 110, 0.05);
+}
+
+.profile-card {
+    text-align: center;
+    height: fit-content;
+}
+
+
+/* FOTO PROFIL */
+.avatar {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #eaf2ff;
+}
+
+.avatar.large {
+    width: 125px;
+    height: 125px;
+    font-size: 55px;
+}
+
+
+.profile-card h2 {
+    font-size: 19px;
+}
+
+.profile-card p {
+    color: #718096;
+}
+
+.content-card h2 {
+    color: #172b4d;
+    margin-bottom: 18px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.info-row strong {
+    color: #34445d;
+}
+
+.info-row span {
+    color: #718096;
+    text-align: right;
+}
+
+.sub-heading {
+    margin-top: 25px;
+}
+
+.content-card > p {
+    color: #68758a;
+}
+
+.interest-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest-list span,
+.category {
+    background: #eaf2ff;
+    color: #2878db;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* HALAMAN KEGIATAN */
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.activity-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30, 65, 110, 0.05);
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-number {
+    font-size: 30px;
+    color: #2878db;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.activity-card h2 {
+    font-size: 20px;
+    color: #172b4d;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+/* HALAMAN KARYA SASTRA */
+.poem-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: white;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(30, 65, 110, 0.07);
+    text-align: center;
+}
+
+.poem-label {
+    color: #2878db;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.poem-container h2 {
+    color: #172b4d;
+    font-size: 28px;
+}
+
+.poem-author {
+    color: #8a96a8;
+    font-size: 13px;
+    margin: 8px 0 30px;
+}
+
+.poem {
+    color: #58677e;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.poem p {
+    margin-bottom: 22px;
+}
+
+/* BAGIAN FOOTER */
+footer {
+    background: #172b4d;
+    color: #dce6f5;
+    text-align: center;
+    padding: 22px;
+    margin-top: 60px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE UNTUK HP DAN TABLET */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-card {
+        max-width: none;
+    }
+
+    .profile-layout,
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .info-row span {
+        text-align: left;
+    }
+
+    .poem-container {
+        padding: 25px 18px;
+    }
+}
